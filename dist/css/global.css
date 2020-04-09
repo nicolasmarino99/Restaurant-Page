@@ -1,36 +1,3 @@
-nav {
-  display: flex;
-  color: white;
-  background-image: url(/dist/img/foto2.jpg);
-  background-size: cover;
-  height: 100%;
-  -webkit-box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84);
-  -moz-box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84);
-  box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84); }
-  nav #logo {
-    display: flex;
-    color: white;
-    border: 5px solid white;
-    font-size: 25px;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 48px;
-    width: 19%;
-    height: 20%;
-    font-family: 'Nunito', sans-serif;
-    letter-spacing: 10px;
-    line-height: 42px; }
-  nav #index {
-    display: flex;
-    margin: 30px 0em;
-    justify-content: space-around;
-    width: 71%;
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px; }
-    nav #index div {
-      text-transform: uppercase; }
-
 main {
   display: flex;
   flex-wrap: wrap;
@@ -38,29 +5,40 @@ main {
   height: 100%; }
   main div {
     display: flex;
-    border: 5px solid black;
+    border: 4px solid black;
     position: absolute;
-    background-color: black;
+    background-color: #faf3eb;
     color: white;
     align-items: center;
     justify-content: center; }
+    @media screen and (max-width: 90em) {
+      main div {
+        height: 62.1%; } }
     main div p {
       padding: 2em;
       font-size: 1.5em; }
     main div a {
       font-size: 1.2em;
       border: 3px solid;
-      padding: 0.5em; }
+      padding: 0.5em;
+      border: 2px solid black;
+      text-transform: uppercase; }
+      @media screen and (max-width: 90em) {
+        main div a {
+          font-size: 13px; } }
   main #div-1 {
     height: 41%;
     width: 36%;
     flex-direction: column;
-    z-index: 1; }
+    z-index: 1;
+    color: black; }
+    @media screen and (max-width: 90em) {
+      main #div-1 P {
+        font-size: 16px; } }
   main #paralax-1 {
     height: 70%;
     width: 65%;
     z-index: 2;
-    background-color: wheat;
     left: 35%;
     bottom: -55%;
     background-image: url(/dist/img/foto1.jpg);
@@ -72,9 +50,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover; }
     main #paralax-1 p {
-      font-family: 'Nunito', sans-serif;
       letter-spacing: 10px;
-      font-size: 6.5em;
+      font-size: 5.5em;
       padding: 29px;
       font-weight: bold;
       border: 14px solid white; }
@@ -83,7 +60,6 @@ main {
     height: 60%;
     width: 68%;
     z-index: 3;
-    background-color: wheat;
     background-image: url(/dist/img/foto3.jpg);
     /* Set a specific height */
     min-height: 500px;
@@ -93,9 +69,8 @@ main {
     background-repeat: no-repeat;
     background-size: cover; }
     main #paralax-2 p {
-      font-family: 'Nunito', sans-serif;
       letter-spacing: 10px;
-      font-size: 6.5em;
+      font-size: 5.5em;
       padding: 29px;
       font-weight: bold;
       border: 14px solid white; }
@@ -108,7 +83,100 @@ main {
     flex-direction: column;
     z-index: 1;
     top: 154%;
-    right: 0%; }
+    right: 0%;
+    color: black; }
+    @media screen and (max-width: 90em) {
+      main #div-4 {
+        height: 62.1%; }
+        main #div-4 p {
+          font-size: 16px; } }
+
+/* Nav */
+nav {
+  display: flex;
+  color: white;
+  background-image: url(/dist/img/foto2.jpg);
+  background-size: cover;
+  height: 100%;
+  -webkit-box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84);
+  -moz-box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84);
+  box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84); }
+  nav .option1 {
+    --bg-color: rgba(0, 0, 0, 0);
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--bg-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    align-items: center;
+    margin-top: 0; }
+    nav .option1 a {
+      height: 5%;
+      color: white;
+      text-decoration: none; }
+      nav .option1 a:hover {
+        color: #cb8820; }
+    nav .option1 #logo {
+      --lg-h: 41%;
+      --lg-w: 15%;
+      --border: 4px;
+      display: flex;
+      color: white;
+      border: var(--border) solid white;
+      text-align: center;
+      margin: 25px 48px;
+      width: var(--lg-w);
+      height: var(--lg-h);
+      letter-spacing: 5px;
+      padding: 1em;
+      line-height: 42px; }
+      @media screen and (max-width: 90em) {
+        nav .option1 #logo {
+          font-size: 20px; } }
+    nav .option1 #index {
+      display: flex;
+      margin: 30px 0em;
+      justify-content: flex-end;
+      width: 71%;
+      text-align: center;
+      align-items: center;
+      font-size: 20px; }
+      @media screen and (max-width: 90em) {
+        nav .option1 #index {
+          font-size: 12px; } }
+      nav .option1 #index a {
+        text-transform: uppercase;
+        margin-left: 2em;
+        letter-spacing: 3px; }
+      nav .option1 #index #reserve {
+        border: 2px solid white;
+        padding: 8px; }
+  nav .option2 {
+    --bg-color: rgba(0, 10, 15, 0.753); }
+    nav .option2 #logo {
+      --lg-w:20%;
+      --lg-h:45px;
+      --border:2px;
+      line-height: 0px; }
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 10, 15, 0.753);
+  z-index: 5;
+  height: 8%;
+  color: white; }
+  footer .icons a img {
+    padding: 0 3px;
+    height: 25px; }
 
 * {
   margin: 0;
@@ -122,6 +190,7 @@ body {
   height: 100%; }
 
 .content {
-  height: 100%; }
+  height: 100%;
+  font-family: 'Nunito', sans-serif; }
 
 /*# sourceMappingURL=global.css.map */
