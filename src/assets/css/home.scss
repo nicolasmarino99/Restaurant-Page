@@ -59,7 +59,7 @@ main {
        ;
         left: 35%;
         bottom: -55%;
-        background-image: url(/dist/img/foto1.jpg);
+        background-image: url(/src/assets/img/foto1.jpg);
 
         /* Set a specific height */
         min-height: 500px; 
@@ -84,7 +84,7 @@ main {
         width: 68%;
         z-index: 3;
         
-        background-image: url(/dist/img/foto3.jpg);
+        background-image: url(/src/assets/img/foto3.jpg);
 
         /* Set a specific height */
         min-height: 500px; 
@@ -129,7 +129,7 @@ nav {
     
     display: flex;
     color: white;
-    background-image: url(/dist/img/foto2.jpg);
+    background-image: url(/src/assets/img/foto2.jpg);
     background-size: cover;
     height: 100%;
     -webkit-box-shadow: inset 0px 111px 51px -28px rgba(0,0,0,0.84);

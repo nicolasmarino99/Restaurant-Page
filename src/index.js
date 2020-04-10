@@ -3,7 +3,7 @@ function component() {
     const element = document.createElement('div');
   
    
-    alert('hello world world')
+    alert('hello  world')
   
     return element;
   }
