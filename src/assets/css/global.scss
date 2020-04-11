@@ -1,4 +1,6 @@
 @import 'home';
+@import 'nav';
+@import 'menu';
 //@import 'variables';
 
 * {
@@ -9,16 +11,18 @@
 
 html {
     height: 100%;
+    background-color: #faf3eb;
     //overflow-y:hidden;
 }
 
 body {
     height: 100%;
     //overflow-y:hidden;
+    font-family: 'Nunito', sans-serif;
 }
 
 .content {
     height: 100%;
-    font-family: 'Nunito', sans-serif;
+    
     
 }

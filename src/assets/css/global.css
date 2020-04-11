@@ -31,7 +31,8 @@ main {
     width: 36%;
     flex-direction: column;
     z-index: 1;
-    color: black; }
+    color: black;
+    font-family: 'Dosis', sans-serif; }
     @media screen and (max-width: 90em) {
       main #div-1 P {
         font-size: 16px; } }
@@ -41,7 +42,7 @@ main {
     z-index: 2;
     left: 35%;
     bottom: -55%;
-    background-image: url(/dist/img/foto1.jpg);
+    background-image: url(/src/assets/img/foto1.jpg);
     /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */
@@ -60,7 +61,7 @@ main {
     height: 60%;
     width: 68%;
     z-index: 3;
-    background-image: url(/dist/img/foto3.jpg);
+    background-image: url(../img/foto3.jpg);
     /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */
@@ -81,6 +82,7 @@ main {
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: 'Dosis', sans-serif;
     z-index: 1;
     top: 154%;
     right: 0%;
@@ -92,16 +94,41 @@ main {
           font-size: 16px; } }
 
 /* Nav */
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 10, 15, 0.753);
+  z-index: 5;
+  height: 8%;
+  color: white; }
+  footer .icons a {
+    background-image: url(/src/assets/img/facebook.svg); }
+    footer .icons a img {
+      padding: 0 3px;
+      height: 25px; }
+
 nav {
   display: flex;
   color: white;
-  background-image: url(/dist/img/foto2.jpg);
+  background-image: url(/src/assets/img/foto2.jpg);
   background-size: cover;
   height: 100%;
   -webkit-box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84);
   -moz-box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84);
   box-shadow: inset 0px 111px 51px -28px rgba(0, 0, 0, 0.84); }
+  nav .trigger {
+    width: 100%;
+    height: 3%;
+    margin-top: 2em;
+    z-index: 4; }
   nav .option1 {
+    transition: background 280ms ease-in;
+    animation: slide 2s ease;
     --bg-color: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
@@ -113,6 +140,11 @@ nav {
     font-weight: bold;
     align-items: center;
     margin-top: 0; }
+@keyframes slide {
+  0% {
+    transform: translate(0, 20px); }
+  100% {
+    transform: translate(0, 0); } }
     nav .option1 a {
       height: 5%;
       color: white;
@@ -132,7 +164,13 @@ nav {
       height: var(--lg-h);
       letter-spacing: 5px;
       padding: 1em;
-      line-height: 42px; }
+      line-height: 42px;
+      animation: slide 2s ease; }
+@keyframes slide {
+  0% {
+    transform: translate(0, 20px); }
+  100% {
+    transform: translate(0, 0); } }
       @media screen and (max-width: 90em) {
         nav .option1 #logo {
           font-size: 20px; } }
@@ -143,7 +181,13 @@ nav {
       width: 71%;
       text-align: center;
       align-items: center;
+      animation: slide 2s ease;
       font-size: 20px; }
+@keyframes slide {
+  0% {
+    transform: translate(0, 20px); }
+  100% {
+    transform: translate(0, 0); } }
       @media screen and (max-width: 90em) {
         nav .option1 #index {
           font-size: 12px; } }
@@ -154,29 +198,95 @@ nav {
       nav .option1 #index #reserve {
         border: 2px solid white;
         padding: 8px; }
-  nav .option2 {
+  nav .scrolled-nav {
     --bg-color: rgba(0, 10, 15, 0.753); }
-    nav .option2 #logo {
+    nav .scrolled-nav #logo {
       --lg-w:20%;
       --lg-h:45px;
       --border:2px;
       line-height: 0px; }
 
-/* footer */
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  background-color: rgba(0, 10, 15, 0.753);
-  z-index: 5;
-  height: 8%;
-  color: white; }
-  footer .icons a img {
-    padding: 0 3px;
-    height: 25px; }
+.menu-index {
+  background: #faf3eb; }
+  .menu-index #special-logo {
+    animation: slide 1s ease;
+    position: absolute;
+    top: 62%;
+    left: 29.5%;
+    color: white;
+    border: 8px solid;
+    font-size: 5em;
+    padding: 5px 40px;
+    animation: slide 2s ease; }
+@keyframes slide {
+  0% {
+    transform: translate(0, 40px); }
+  100% {
+    transform: translate(0, 0); } }
+  .menu-index .meals {
+    border-left: 3px solid;
+    border-right: 3px solid;
+    border-bottom: 3px solid;
+    margin: 0 1.5em 87px 1.5em; }
+    .menu-index .meals .options {
+      display: flex;
+      justify-content: center; }
+    .menu-index .meals #dinner {
+      border: 2px solid #F49C1E; }
+    .menu-index .meals a {
+      display: flex;
+      position: relative;
+      top: -23px;
+      padding: 2em;
+      font-weight: 400;
+      margin-right: 2em;
+      padding: 8px 25px;
+      text-decoration: none;
+      border: none;
+      color: #F49C1E;
+      letter-spacing: 2px;
+      background-color: #faf3eb; }
+      .menu-index .meals a:hover {
+        animation: zoom-out .5s ease;
+        transition: border 280ms;
+        border: 2px solid #F49C1E;
+        transform: scale(1.1, 1); }
+@keyframes zoom-out {
+  0% {
+    transform: scale(1, 1); }
+  100% {
+    transform: scale(1.1, 1); } }
+        .menu-index .meals a:hover p {
+          transform: scale(0.9, 1); }
+  .menu-index .dinner-content {
+    background-color: #faf3eb;
+    display: flex;
+    width: 36%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    flex-direction: column; }
+    .menu-index .dinner-content h1 {
+      border-bottom: 2px solid;
+      margin-top: 1em;
+      position: relative;
+      font-size: 40px;
+      right: 25%;
+      width: 149%; }
+      .menu-index .dinner-content h1 span {
+        background-color: #faf3eb;
+        position: relative;
+        top: 29px;
+        padding: 0 20px; }
+    .menu-index .dinner-content h2 {
+      margin-top: 3em;
+      position: relative;
+      font-size: 35px;
+      right: 25%;
+      width: 149%; }
+    .menu-index .dinner-content p {
+      margin-top: 2em; }
 
 * {
   margin: 0;
@@ -184,13 +294,14 @@ footer {
   box-sizing: border-box; }
 
 html {
-  height: 100%; }
+  height: 100%;
+  background-color: #faf3eb; }
 
 body {
-  height: 100%; }
-
-.content {
   height: 100%;
   font-family: 'Nunito', sans-serif; }
+
+.content {
+  height: 100%; }
 
 /*# sourceMappingURL=global.css.map */

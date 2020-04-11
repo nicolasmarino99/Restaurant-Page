@@ -1,0 +1,117 @@
+.menu-index {
+   
+    background: #faf3eb;
+    
+    #special-logo {
+        
+        animation: slide 1s ease;
+        @keyframes slide {
+            0% {
+                transform: translate(0, 40px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+        position: absolute;
+        top: 62%;
+        left: 29.5%;
+        color: white;
+        border: 8px solid;
+        font-size: 5em;
+        padding: 5px 40px;
+        animation: slide 2s ease;
+        
+    }
+    .meals {
+        
+        border-left: 3px solid;
+        border-right: 3px solid;
+        border-bottom: 3px solid;
+        margin: 0 1.5em 87px 1.5em;
+        .options {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #dinner {
+            border: 2px solid #F49C1E;
+        }
+        a {
+            display: flex;
+            position: relative;
+            top: -23px;
+            padding: 2em;
+            font-weight: 400;
+            margin-right: 2em;
+            padding: 8px 25px;
+            text-decoration: none;
+            border: none;
+            color: #F49C1E;
+            letter-spacing: 2px;
+            
+           
+            
+            background-color: #faf3eb;
+            &:hover {
+                
+                animation: zoom-out .5s ease;
+                @keyframes zoom-out {
+                    0% {
+                        transform: scale(1,1);
+                    }
+                    100% {
+                        transform: scale(1.1,1);
+                    }
+                }
+                p {
+                    
+                        transform: scale(.9,1);
+                    
+                }
+                transition: border 280ms ;
+                border: 2px solid #F49C1E;
+                transform: scale(1.1,1)
+                
+            }
+            
+        }
+    }
+    .dinner-content {
+        background-color: #faf3eb;
+        display: flex;
+        width: 36%;
+        margin: auto;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+        flex-direction: column;
+        h1 {
+            border-bottom: 2px solid;
+            margin-top: 1em;
+            position: relative;
+            font-size: 40px;
+            right: 25%;
+            width: 149%;
+
+            span {
+                background-color: #faf3eb;
+                position: relative;
+                top: 29px;
+                padding: 0 20px;
+            
+                
+            }
+        }
+        h2 {
+            margin-top: 3em;
+            position: relative;
+            font-size: 35px;
+            right: 25%;
+            width: 149%;
+        }
+        p {
+            margin-top: 2em;
+        }
+    }
+}
