@@ -1,19 +1,19 @@
 # JavaScript Tic-Tac-Toe
 
-In this project we created a Tic-Tac-Toe game. It has the following fuctionalities:
-- player creation;
-- score victories;
-- user interface.
+This Project was made to learn the main fearutes of webpack and npm javascript tools for modularize pieces of software. In this oportunity I made a restaurant website usign the boive mentioned technologies.
 
-![screenshot](assets/img/ttt_menu.png)
-![screenshot](assets/img/ttt_match.png)
 
-You can find the original description in [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/tic-tac-toe-javascript)
+![screenshot](/src/assets/img/rfoto1.jpg)
+![screenshot](/src/assets/img/rfoto2.jpg)
+
+You can find the original description in [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons)
 
 ## Built With
 
 - HTML5 
 - Sass
+- Webpack
+- npm
 - JavaScript
 
 ## Live Demo
@@ -22,8 +22,10 @@ You can find the original description in [The Odin Project](https://www.theodinp
 
 
 ## Getting Started
+Download and run the following commands into your terminal:
 
-Access the live demo website and click on multiplayer. Fill up the form with the name of the two players and hit enter to start playing. To make the moves, click on the position in the board. To reset the game, click on the icon on the top right corner.
+- `npm i`
+- `npm start`
 
 ### Prerequisites
 - web browser
