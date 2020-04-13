@@ -1,5 +1,6 @@
 export default 
-`<div class="menu-index">
+`<img src="../src/assets/img/foto5.jpg" class="img-home">
+<div class="menu-index">
 <p id="special-logo">Dining room</p>
 <div class="meals">
     <div class="options">

@@ -1,6 +1,7 @@
 @import 'home';
 @import 'nav';
 @import 'menu';
+@import 'locHours';
 //@import 'variables';
 
 * {
@@ -20,7 +21,13 @@ body {
     //overflow-y:hidden;
     font-family: 'Nunito', sans-serif;
 }
-
+.img-home {
+    height: 101%;
+    width: 100%;
+    filter: brightness(0.5);
+    
+        
+}
 .content {
     height: 100%;
     
