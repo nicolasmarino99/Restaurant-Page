@@ -44,7 +44,7 @@ main {
     z-index: 2;
     left: 35%;
     bottom: -55%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.329)), url(88bb01169bb480612e0dd249797d12e4.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.329)), url(../img/foto4.jpg);
     /* Set a specific height */
     min-height: 500px;
     /* Create the parallax scrolling effect */
