@@ -1,4 +1,5 @@
 import './assets/css/global.css';
+import foto1 from './assets/img/foto1.jpg'
 import nav from './views/nav';
 import footer from './views/footer';
 import home from './views/home';
