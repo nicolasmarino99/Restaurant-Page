@@ -13,4 +13,4 @@ export default
     <p>The Tavern serves an à la carte menu throughout the afternoon and evening. No reservations – just stop in.</p>
     <a class="menu">View the menu</a>
 </div>
-</main>` 
+</main>`;

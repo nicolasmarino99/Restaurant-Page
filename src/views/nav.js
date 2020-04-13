@@ -1,4 +1,4 @@
-export default 
+export default
 
 `<nav>
         <div class="option1">
@@ -14,5 +14,4 @@ export default
         
         </div>
         <div class="trigger"></div>
-    </nav>`
-
+    </nav>`;

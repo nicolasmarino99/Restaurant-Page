@@ -18,10 +18,15 @@
   },
   "homepage": "https://github.com/nicolasmarino99/Restaurant-Page#readme",
   "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
     "lodash": "^4.17.15"
-  }
+  },
+  "main": "webpack.config.js",
+  "keywords": []
 }

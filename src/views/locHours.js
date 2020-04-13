@@ -1,4 +1,4 @@
-export default 
+export default
 `
 <img src="../src/assets/img/foto4.jpg" class="img-home">
 <div class="location-hours">
@@ -34,4 +34,4 @@ export default
     
 </div>
 
-</div>`
+</div>`;

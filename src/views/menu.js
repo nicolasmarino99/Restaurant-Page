@@ -1,4 +1,4 @@
-export default 
+export default
 `
 <img src="../src/assets/img/foto3.jpg" class="img-home">
 <div class="menu-index">
@@ -68,4 +68,4 @@ export default
     
 </div>
 
-</div>`
+</div>`;
