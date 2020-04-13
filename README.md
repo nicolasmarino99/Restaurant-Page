@@ -1,4 +1,4 @@
-# JavaScript Tic-Tac-Toe
+# JavaScript Restaurant app 
 
 This Project was made to learn the main fearutes of webpack and npm javascript tools for modularize pieces of software. In this oportunity I made a restaurant website usign the boive mentioned technologies.
 
@@ -18,7 +18,7 @@ You can find the original description in [The Odin Project](https://www.theodinp
 
 ## Live Demo
 
-[Live Demo Link](https://rawcdn.githack.com/nicolasmarino99/Tic-Tac-Toe/c5dc04b422b4ebe2c9ff7c3f26bce5ca9d71d431/index.html)
+
 
 
 ## Getting Started
