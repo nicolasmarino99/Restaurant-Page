@@ -1,3 +1,4 @@
+import './assets/css/global.css';
 import nav from './views/nav';
 import footer from './views/footer';
 import home from './views/home';
