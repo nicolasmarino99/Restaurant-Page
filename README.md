@@ -18,7 +18,7 @@ You can find the original description in [The Odin Project](https://www.theodinp
 
 ## Live Demo
 
-[Web link](https://rawcdn.githack.com/nicolasmarino99/Restaurant-Page/c610654e1c0f5137a83614218febf37aa6315ef2/dist/index.html)
+[Web link](https://rawcdn.githack.com/nicolasmarino99/Restaurant-Page/83c0e8b213389d9fc065c7c2f88803291913925a/dist/index.html)
 
 
 ## Getting Started
