@@ -1,0 +1,35 @@
+@import 'home';
+@import 'nav';
+@import 'menu';
+@import 'locHours';
+//@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    background-color: #faf3eb;
+    //overflow-y:hidden;
+}
+
+body {
+    height: 100%;
+    //overflow-y:hidden;
+    font-family: 'Nunito', sans-serif;
+}
+.img-home {
+    height: 101%;
+    width: 100%;
+    filter: brightness(0.5);
+    
+        
+}
+.content {
+    height: 100%;
+    
+    
+}
